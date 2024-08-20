@@ -1,0 +1,6 @@
+<%= form_with model: [@post, Comment.new], local: true do |form| %>
+  <p>Your comment:</p>
+  <%= form.text_area :content, size: "20x5" %>
+  <br>
+  <%= form.submit %>
+<% end %>
